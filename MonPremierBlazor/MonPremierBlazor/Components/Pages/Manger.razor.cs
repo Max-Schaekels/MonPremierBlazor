@@ -18,8 +18,7 @@ namespace MonPremierBlazor.Components.Pages
             else
             {
                 DateTime maintenant = DateTime.Now;
-
-                // Heure du prochain repas (ex : midi)
+                
                 DateTime prochainRepas = new DateTime(maintenant.Year, maintenant.Month, maintenant.Day, 12, 30, 0);
 
 
@@ -28,5 +27,7 @@ namespace MonPremierBlazor.Components.Pages
                 message = $"Vous êtes à {minutes} minutes du repas";
             }
         }
+
+
     }
 }
