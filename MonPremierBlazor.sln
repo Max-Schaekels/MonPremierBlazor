@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonPremierBlazor", "MonPrem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonPremierBlazor.Client", "MonPremierBlazor\MonPremierBlazor.Client\MonPremierBlazor.Client.csproj", "{E8D0A469-7F79-44DE-BFE8-977404126C34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonPremierBlazor.Models", "MonPremierBlazor.Models\MonPremierBlazor.Models.csproj", "{5C2BA7F9-9EA2-4CA4-8FC3-E6FF2B3BE288}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E8D0A469-7F79-44DE-BFE8-977404126C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8D0A469-7F79-44DE-BFE8-977404126C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8D0A469-7F79-44DE-BFE8-977404126C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C2BA7F9-9EA2-4CA4-8FC3-E6FF2B3BE288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C2BA7F9-9EA2-4CA4-8FC3-E6FF2B3BE288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C2BA7F9-9EA2-4CA4-8FC3-E6FF2B3BE288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C2BA7F9-9EA2-4CA4-8FC3-E6FF2B3BE288}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
