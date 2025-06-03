@@ -1,0 +1,13 @@
+﻿@page "/quizz"
+@rendermode InteractiveServer
+
+Votre prénom =  <input type="text" name="txtPrenom" @bind="Prenom" />
+
+<h1>Quizz</h1>
+
+@if (!string.IsNullOrEmpty(Prenom))
+{
+    <DisplayComponent Prenom="@Prenom" OnQuizFinished="RecevoirReponse"></DisplayComponent>
+    
+}
+

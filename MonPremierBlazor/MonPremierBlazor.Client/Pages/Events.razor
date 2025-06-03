@@ -1,0 +1,17 @@
+﻿@page "/events"
+@rendermode InteractiveServer
+
+<h3>Events</h3>
+
+information : @info
+
+<button @onclick="test">Test</button>
+
+@code {
+    private string info = "info de base";
+
+    public void test()
+    {
+        info = "Yes ?";
+    }
+}

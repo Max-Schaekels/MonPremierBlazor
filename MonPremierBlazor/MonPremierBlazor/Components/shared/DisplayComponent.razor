@@ -1,0 +1,33 @@
+﻿<div class="container">
+    @if (!quizzTermine)
+    {
+        <div class="card">
+            <h2>Bonjour @Prenom </h2> 
+            <h2>Question n°@num</h2>
+            <p>@question</p>
+            <button @onclick="@(() => Choisir("Oui"))">Oui</button>
+            <button @onclick="@(() => Choisir("Non"))">Non</button>
+
+
+        </div>
+    }
+    else
+    {
+        <div class="card">
+            <h2>Fin du quizz</h2>
+            <p>Merci pour vos réponses.</p>
+        </div>
+    }
+    @if (reponses.Any())
+    {
+        <div class="reponses">
+            <h3>Vos réponses :</h3>
+            <ul>
+                @for (int i = 0; i < reponses.Count; i++)
+                {
+                    <li>Question @((i + 1)) : @reponses[i]</li>
+                }
+            </ul>
+        </div>
+    }
+</div>
