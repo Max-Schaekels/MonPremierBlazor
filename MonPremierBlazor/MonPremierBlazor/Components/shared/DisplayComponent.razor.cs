@@ -10,8 +10,11 @@ namespace MonPremierBlazor.Components.shared
         
         private int index;
 
+        //[Parameter]
+        //public EventCallback<List<string>> OnQuizFinished { get; set; }
+
         [Parameter]
-        public EventCallback<List<string>> OnQuizFinished { get; set; }
+        public EventCallback<string> OnNouvelleReponse { get; set; }
 
         [Parameter]
         public string Prenom { get; set; }
@@ -30,6 +33,7 @@ namespace MonPremierBlazor.Components.shared
             if (index < questions.Count)
             {
                 reponses.Add(reponse);
+                OnNouvelleReponse.InvokeAsync(reponse);
                 reponseActuelle = reponse;
                 index++;
                 
@@ -37,7 +41,7 @@ namespace MonPremierBlazor.Components.shared
             if (index == questions.Count)
             {
                 quizzTermine = true;
-                OnQuizFinished.InvokeAsync(reponses);
+                //OnQuizFinished.InvokeAsync(reponses);
             }
 
         }
